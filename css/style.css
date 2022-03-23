@@ -174,11 +174,12 @@ h4{
 .title{
 	display: flex;
 	align-items: center;
+	
 }
 .title h2{
 	color: #fff;
 	font-size: 75px;
-	width: 1130px;
+	width: 980px;
 	margin: 30px auto;
 	text-align: center;
 }
@@ -332,6 +333,14 @@ footer p:nth-child(2){
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+}
+
+.first{
+	transition: all ease 1s;
+}
+
+.first:hover{
+	transform: scale(1.1);
 }
 
 .projects{
