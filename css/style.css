@@ -12,13 +12,15 @@ html{
 }
 body{
 	width: 100%;
+	background: fixed no-repeat 50% 50% url(../img/background_.jpg);
+	background-size: cover;
+	background-position: center;
+	overflow-x: hidden;
 }
 .hero{
 	height: 100vh;
 	width: 100%;
-	background: linear-gradient(to top, #191919, #191919, #191919, #101010, #101010);
-	background-size: cover;
-	background-position: center;
+	/* background: linear-gradient(to top, #191919, #191919, #191919, #101010, #101010); */
 }
 nav{
 	display: flex;
@@ -36,6 +38,9 @@ nav{
 }
 span{
 	color: var(--primary);
+}
+h3 span{
+	color: #00dd66;
 }
 .logo span:nth-child(1){
 	color: #00dd66;
@@ -98,8 +103,10 @@ h4{
 	justify-content: center;
 	width: 100%;
 	height: auto;
+	min-height: 100vh;
 	padding: 100px 0px;
 	background-color: #191919;
+	border-radius: 40px;
 }
 .about img{
 	height: 500px;
@@ -145,6 +152,7 @@ h4{
 	line-height: 28px;
 	font-size: 18px;
 	margin-bottom: 45px;
+	text-align: center;
 }
 .button{
 	background-color:var(--primary);
@@ -169,7 +177,7 @@ h4{
 	justify-content: center;
 	flex-wrap: wrap;
 	height: auto;
-	background: #101010;
+	min-height: 100vh;
 	width: 100%;
 	padding: 100px 0px;
 }
@@ -245,7 +253,6 @@ h5{
 .contact-me{
 	width: 100%;
 	height: 290px;
-	background: #191919;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -282,6 +289,8 @@ footer{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
 }
 footer p:nth-child(1){
 	font-size: 30px;
@@ -351,8 +360,10 @@ footer p:nth-child(2){
 	flex-wrap: wrap;
 	width: 100%;
 	height: auto;
+	min-height: 100vh;
 	padding: 100px 0px;
 	background-color: #191919;
+	border-radius: 40px;
 }
 .flex-container{
 	display: flex;
@@ -375,7 +386,7 @@ footer p:nth-child(2){
 	height: 70%;
 }
 .hero-description-bk {
-	background-image: linear-gradient(0deg , #666, #555, #444, #333, #222, #111);
+	background-image: linear-gradient(0deg , #060, #050, #040, #030, #020, #010);
 	border-radius: 30px;
 	position: absolute;
 	top: 55%;
@@ -391,7 +402,7 @@ footer p:nth-child(2){
 	height: 80px;
 	width: 80px;
 	border-radius: 20px;
-	background: radial-gradient(circle, #fff, #eee, #ddd, #ccc, #bbb, #aaa, #888);
+	background: radial-gradient(circle, #888, #777, #666, #555, #444, #333, #222);
 	position: absolute;
 	bottom: 30%;
 	left: 30px;
@@ -402,6 +413,7 @@ footer p:nth-child(2){
 .hero-logo h6 {
 	font-size: 2rem;
 	text-align: center;
+	color:#000;
 }
   
 .hero-description {
@@ -441,31 +453,58 @@ footer p:nth-child(2){
 	text-decoration: none;
 	text-align: center;
 }
+::-webkit-scrollbar{
+	width: 10px;
+	background: #010;
+}
+::-webkit-scrollbar-track{
+	border: 1px solid #010;
+}
+::-webkit-scrollbar-thumb{
+	background: #030;
+	border-radius: 40px;
+	opacity: .5;
+}
+/*----------------------------------ANIMATIONS----------------------------------*/
 
-@media (max-width: 1230px){
-	.hero2 {
-		display: inline-block;
-		position: relative;
-		width: 350px;
-		min-width: 300px;
-		height: 350px;
-		border-radius: 30px;
-		overflow:hidden;
-		box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-		margin: 30px;
+/*Left to Right*/
+
+@keyframes move{
+	0%{
+		opacity: 0;
+		transform: translateX(-400px);
+	}
+	100%{
+		opacity: 1;
 	}
 }
-
-@media (max-width: 700px){
-	.hero2 {
-		display: inline-block;
-		position: relative;
-		width: 350px;
-		min-width: 300px;
-		height: 350px;
-		border-radius: 30px;
-		overflow:hidden;
-		box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-		margin: 30px;
+/*Top to Bottom*/
+@keyframes move2{
+	0%{
+		opacity: 0;
+		transform: translateY(-400px);
+	}
+	100%{
+		opacity: 1;
+	}
+}
+/*Right to Left*/
+@keyframes move3{
+	0%{
+		opacity: 0;
+		transform: translateX(400px);
+	}
+	100%{
+		opacity: 1;
+	}
+}
+/*Bottom to Top*/
+@keyframes move4{
+	0%{
+		opacity: 0;
+		transform: translateY(400px);
+	}
+	100%{
+		opacity: 1;
 	}
 }
