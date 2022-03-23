@@ -13,7 +13,7 @@ html{
 .hero{
 	height: 100vh;
 	width: 100%;
-	background-image: url(../img/background.jpg);
+	background: linear-gradient(to top, #191919, #191919, #191919, #101010, #101010);
 	background-size: cover;
 	background-position: center;
 }
@@ -34,6 +34,12 @@ nav{
 span{
 	color: var(--primary);
 }
+.logo span:nth-child(1){
+	color: #00dd66;
+}
+h5 span{
+	color: #00dd66;
+}
 nav ul li{
 	list-style-type: none;
 	display: inline-block;
@@ -46,7 +52,7 @@ nav ul li a{
 	text-transform: capitalize;
 }
 nav ul li a:hover{
-	color: var(--primary);
+	color: #00dd66;
 	transition: .4s;
 }
 .btn{
@@ -299,7 +305,7 @@ footer p:nth-child(2){
 }
 .end{
 	position: absolute;
-	color:var(--primary);
+	color: #00dd66;
 	bottom: 35px;
 	font-size: 14px; 
 	cursor: pointer;
@@ -354,10 +360,13 @@ footer p:nth-child(2){
 	transform: skew(19deg, -9deg);
 }
 .hero-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 80px;
 	width: 80px;
 	border-radius: 20px;
-	background-color: #fff;
+	background: radial-gradient(circle, #fff, #eee, #ddd, #ccc, #bbb, #aaa, #888);
 	position: absolute;
 	bottom: 30%;
 	left: 30px;
@@ -365,8 +374,9 @@ footer p:nth-child(2){
 	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
 }
   
-.hero-logo img {
-	height: 100%;
+.hero-logo h6 {
+	font-size: 2rem;
+	text-align: center;
 }
   
 .hero-description {
