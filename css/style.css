@@ -92,11 +92,12 @@ h4{
 
 .about{
 	width: 100%;
+	height: 100vh;
 	padding: 100px 0px;
 	background-color: #191919;
 }
 .about img{
-	height: auto;
+	height: 500px;
 	width: 430px;
 }
 .about-text{
@@ -159,6 +160,7 @@ h4{
 .service{
 	background: #101010;
 	width: 100%;
+	height: 100vh;
 	padding: 100px 0px;
 }
 .title{
@@ -326,6 +328,7 @@ footer p:nth-child(2){
 
 .projects{
 	width: 100%;
+	height: 100vh;
 	padding: 100px 0px;
 	background-color: #191919;
 }
