@@ -2,6 +2,7 @@ window.addEventListener('scroll', ()=>{
     let card_1 = document.querySelector('.card_1');
     let card_2 = document.querySelector('.card_2');
     let card_3 = document.querySelector('.card_3');
+    let card_4 = document.querySelector('.card_4');
     let project_1 = document.querySelector('.project_1');
     let project_2 = document.querySelector('.project_2');
     let project_3 = document.querySelector('.project_3');
@@ -10,6 +11,7 @@ window.addEventListener('scroll', ()=>{
     let pos1 = card_1.getBoundingClientRect().top;
     let pos2 = card_2.getBoundingClientRect().top;
     let pos3 = card_3.getBoundingClientRect().top;
+    let pos_1 = card_4.getBoundingClientRect().top;
     let pos4 = project_1.getBoundingClientRect().top;
     let pos5 = project_2.getBoundingClientRect().top;
     let pos6 = project_3.getBoundingClientRect().top;
@@ -41,6 +43,9 @@ window.addEventListener('scroll', ()=>{
     }
     if(pos9 < screensize){
         about_text.style.animation = 'move3 1.5s ease'
+    }
+    if(pos_1 < screensize){
+        card_4.style.animation = 'move 1.8s ease'
     }
 })
 

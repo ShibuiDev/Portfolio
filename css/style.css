@@ -259,6 +259,14 @@ h5{
 .card_3 i{
 	color: #F7DF1E;
 }
+.card_4 img{
+	width: 22%;
+	height: auto;
+	margin: 10px auto;
+}
+.card_4 .pra p{
+	font-size: 15px;
+}
 .contact-me{
 	width: 100%;
 	height: 290px;
@@ -474,6 +482,8 @@ footer p:nth-child(2){
 	border-radius: 40px;
 	opacity: .5;
 }
+
+
 /*----------------------------------ANIMATIONS----------------------------------*/
 
 /*Left to Right*/
@@ -517,6 +527,8 @@ footer p:nth-child(2){
 		opacity: 1;
 	}
 }
+
+/*--------MEDIA-------*/
 
 @media (max-height: 600px){
 	.content{
