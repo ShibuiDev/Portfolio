@@ -7,6 +7,7 @@ window.addEventListener('scroll', ()=>{
     let project_2 = document.querySelector('.project_2');
     let project_3 = document.querySelector('.project_3');
     let img = document.querySelector('.img-container');
+    let img2 = document.querySelector('.img-2');
     let about_text = document.querySelector('.about-text');
     let pos1 = card_1.getBoundingClientRect().top;
     let pos2 = card_2.getBoundingClientRect().top;
@@ -16,6 +17,7 @@ window.addEventListener('scroll', ()=>{
     let pos5 = project_2.getBoundingClientRect().top;
     let pos6 = project_3.getBoundingClientRect().top;
     let pos8 = img.getBoundingClientRect().top;
+    let pos_2 = img2.getBoundingClientRect().top;
     let pos9 = about_text.getBoundingClientRect().top;
     let screensize = window.innerHeight;
 
@@ -23,7 +25,7 @@ window.addEventListener('scroll', ()=>{
         card_1.style.animation = 'move 1.8s ease';
     }
     if(pos2 < screensize){
-        card_2.style.animation = 'move2 1.8s ease'
+        card_2.style.animation = 'move2 1.8s ease';
     }
     if(pos3 < screensize){
         card_3.style.animation = 'move3 1.8s ease';
@@ -33,7 +35,7 @@ window.addEventListener('scroll', ()=>{
         project_1.style.animation = 'move 1.8s ease';
     }
     if(pos5 < screensize){
-        project_2.style.animation = 'move4 1.8s ease'
+        project_2.style.animation = 'move4 1.8s ease';
     }
     if(pos6 < screensize){
         project_3.style.animation = 'move3 1.8s ease';
@@ -42,10 +44,13 @@ window.addEventListener('scroll', ()=>{
         img.style.animation = 'move 1.5s ease';
     }
     if(pos9 < screensize){
-        about_text.style.animation = 'move3 1.5s ease'
+        about_text.style.animation = 'move2 1.5s ease';
     }
     if(pos_1 < screensize){
-        card_4.style.animation = 'move 1.8s ease'
+        card_4.style.animation = 'move 1.8s ease';
+    }
+    if(pos_2 < screensize){
+        img2.style.animation = 'move3 1.8s ease';
     }
 })
 

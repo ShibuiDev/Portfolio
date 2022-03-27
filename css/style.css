@@ -108,25 +108,28 @@ h4{
 	background-color: #191919;
 	border-radius: 40px;
 }
-.about img{
-	height: 500px;
-	width: 430px;
+.img-container img{
+	height: 400px;
+	width: 250px;
 }
 .about-text{
-	width: 550px;
+	width: 400px;
 }
-
+.divider{
+	width: 250px;
+	height: 2px;
+	box-shadow: 0 10px 20px var(--primary);
+}
 
 /*CAMBIAR*/
 
 .img-container{
-	border: solid 2px lightgreen;
-	margin: 0 40px;
+	margin: 0 20px;
 }
 
 
 .main{
-	width: 1130px;
+	width: 100%;
 	max-width: 95%;
 	margin: 0 auto;
 	display: flex;
@@ -529,7 +532,12 @@ footer p:nth-child(2){
 }
 
 /*--------MEDIA-------*/
+@media (max-width: 1050px){
+	.main{
+		flex-direction: column;
+	}
 
+}
 @media (max-height: 600px){
 	.content{
 		position: absolute;
