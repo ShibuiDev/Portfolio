@@ -5,14 +5,16 @@
 	box-sizing: border-box;
 }
 :root{
-	--primary: #21BA10;
+	--primary: #7700ad;
+	--secondary: #aa00ee;
+	--tertiary: #306;
 }
 html{
 	scroll-behavior: smooth;
 }
 body{
 	width: 100%;
-	background: fixed no-repeat 50% 50% url(../img/background_.jpg);
+	background: fixed no-repeat 50% 50% url(../img/back-.jpg);
 	background-size: cover;
 	background-position: center;
 	overflow-x: hidden;
@@ -40,13 +42,13 @@ span{
 	color: var(--primary);
 }
 h3 span{
-	color: #00dd66;
+	color: var(--secondary);
 }
 .logo span:nth-child(1){
-	color: #00dd66;
+	color: var(--secondary);
 }
 h5 span{
-	color: #00dd66;
+	color: var(--secondary);
 }
 nav ul li{
 	list-style-type: none;
@@ -58,10 +60,11 @@ nav ul li a{
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: capitalize;
+	transition: 1s;
 }
 nav ul li a:hover{
-	color: #00dd66;
-	transition: .4s;
+	color: var(--secondary);
+	transition: 1s;
 }
 .btn{
 	background-color:var(--primary);
@@ -118,14 +121,11 @@ h4{
 .divider{
 	width: 250px;
 	height: 2px;
-	box-shadow: 0 10px 20px var(--primary);
+	box-shadow: 0 10px 20px var(--secondary);
 }
 
 /*CAMBIAR*/
 
-.img-container{
-	margin: 0 20px;
-}
 
 
 .main{
@@ -234,7 +234,7 @@ h5{
 }
 .pra p{
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 27px;
 	margin-bottom: 25px;
 }
@@ -268,7 +268,7 @@ h5{
 	margin: 10px auto;
 }
 .card_4 .pra p{
-	font-size: 15px;
+	font-size: 14px;
 }
 .contact-me{
 	width: 100%;
@@ -347,7 +347,7 @@ footer p:nth-child(2){
 }
 .end{
 	position: absolute;
-	color: #00dd66;
+	color: var(--secondary);
 	bottom: 35px;
 	font-size: 14px; 
 	cursor: pointer;
@@ -406,7 +406,7 @@ footer p:nth-child(2){
 	height: 70%;
 }
 .hero-description-bk {
-	background-image: linear-gradient(0deg , #060, #050, #040, #030, #020, #010);
+	background-image: linear-gradient(0deg , #60a, #508, #407, #306, #205, #103);
 	border-radius: 30px;
 	position: absolute;
 	top: 55%;
@@ -475,13 +475,13 @@ footer p:nth-child(2){
 }
 ::-webkit-scrollbar{
 	width: 10px;
-	background: #010;
+	background: var(--tertiary);
 }
 ::-webkit-scrollbar-track{
-	border: 1px solid #010;
+	border: 1px solid var(--tertiary);
 }
 ::-webkit-scrollbar-thumb{
-	background: #030;
+	background: var(--primary);
 	border-radius: 40px;
 	opacity: .5;
 }
