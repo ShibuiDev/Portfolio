@@ -8,13 +8,14 @@
 	--primary: #7700ad;
 	--secondary: #aa00ee;
 	--tertiary: #306;
+	--primary-font: 'Ramaraja', serif;
 }
 html{
 	scroll-behavior: smooth;
 }
 body{
 	width: 100%;
-	background: fixed no-repeat 50% 50% url(../img/back-.jpg);
+	background: fixed no-repeat 50% 50% url(../img/back--min.jpg);
 	background-size: cover;
 	background-position: center;
 	overflow-x: hidden;
@@ -124,10 +125,6 @@ h4{
 	box-shadow: 0 10px 20px var(--secondary);
 }
 
-/*CAMBIAR*/
-
-
-
 .main{
 	width: 100%;
 	max-width: 95%;
@@ -141,6 +138,7 @@ h4{
 	font-size: 75px;
 	text-transform: capitalize;
 	margin-bottom: 20px;
+	font-family: var(--primary-font);
 }
 .about-text h5{
 	color: #fff;
@@ -195,6 +193,7 @@ h4{
 	width: 980px;
 	margin: 30px auto;
 	text-align: center;
+	font-family: var(--primary-font);
 }
 .box{
 	display: flex;
@@ -317,10 +316,11 @@ footer p:nth-child(1){
 	color: #fff;
 	margin-bottom: 20px;
 	font-weight: bold;
+	font-family: var(--primary-font);
 }
 footer p:nth-child(2){
 	color: #fff;
-	font-size: 17px;
+	font-size: 21px;
 	width: 500px;
 	text-align: center;
 	line-height: 26px;
@@ -349,7 +349,7 @@ footer p:nth-child(2){
 	position: absolute;
 	color: var(--secondary);
 	bottom: 35px;
-	font-size: 14px; 
+	font-size: 16px; 
 	cursor: pointer;
 }
 .about-text{
