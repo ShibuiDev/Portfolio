@@ -8,6 +8,8 @@ window.addEventListener('scroll', ()=>{
     let project_3 = document.querySelector('.project_3');
     let img = document.querySelector('.img-container');
     let img2 = document.querySelector('.img-2');
+    let service = document.querySelector('.animate');
+    let service2 = document.querySelector('.animate-');
     let about_text = document.querySelector('.about-text');
     let pos1 = card_1.getBoundingClientRect().top;
     let pos2 = card_2.getBoundingClientRect().top;
@@ -19,6 +21,8 @@ window.addEventListener('scroll', ()=>{
     let pos8 = img.getBoundingClientRect().top;
     let pos_2 = img2.getBoundingClientRect().top;
     let pos9 = about_text.getBoundingClientRect().top;
+    let poss = service.getBoundingClientRect().top;
+    let poss2 = service2.getBoundingClientRect().top;
     let screensize = window.innerHeight;
 
     if(pos1 < screensize){
@@ -51,6 +55,12 @@ window.addEventListener('scroll', ()=>{
     }
     if(pos_2 < screensize){
         img2.style.animation = 'move3 1.8s ease';
+    }
+    if(poss < screensize){
+        service.style.animation = 'move 1.8s ease';
+    }
+    if(poss2 < screensize){
+        service2.style.animation = 'move3 1.8s ease';
     }
 })
 
